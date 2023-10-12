@@ -15,9 +15,10 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 
-# Resize the image
+# Resize the image to maintain a standard size for all the input images
 
-rs_img = cv2.resize(img, (700,465))
+std_size = (700,465) 
+rs_img = cv2.resize(img, std_size)
 
 #cv2.imshow("Display", rs_img)
 #cv2.waitKey(0)
@@ -27,7 +28,7 @@ rs_img = cv2.resize(img, (700,465))
 # Load the reference dataset for color matching
 
 columns = ["color", "color_name", "hex", "R", "G", "B"]
-data_path = r'C:\Users\Niranjan Behera\Desktop\Sept 2023\Internship\CodeClause\Project 1 - Color Detection\python-project-color-detection\colors.csv'
+data_path = r'colors.csv'
 ref_data = pd.read_csv(data_path, names = columns)
 print(ref_data.shape)
 
