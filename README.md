@@ -13,8 +13,9 @@ This repository contains:
 
 ## Approach
 
-Step 1: Load the input image. I have used the sample image 'colorpic.jpg'.
-Step 2: Resize the image to maintain a standard size for all the input images.
-Step 3: Load the 'colors.csv' dataset using pandas library.
-Step 4: Implement a function 'get_color' to calculate the minimum distance between the color from the image and all the colors in the 'colors.csv' dataset and get the most matching color.
-Step 5: Implement a callback function 'display_color' to capture the Mouse Event and display the corresponding color name on the image. The 'display_color' function is called everytime a mouse event occurs (which is double click in this case).
+- Step 1: Load the input image. I have used the sample image "colorpic.jpg".
+- Step 2: Resize the image to maintain a standard size for all the input images.
+- Step 3: Load the "colors.csv" dataset using pandas library.
+- Step 4: Implement a function "get_color()" to calculate the minimum distance between the color in the image and all the colors in the 'colors.csv' dataset and return the most matching color.
+- Step 5: Set the cv2.MouseCallback function that calls "display_color()" whenever a mouse event occurs.
+- Step 6: By double clicking on any color in the image, its name is displayed on the image with the help of "display_color()" function.
