@@ -28,7 +28,7 @@ rs_img = cv2.resize(img, std_size)
 # Load the reference dataset for color matching
 
 columns = ["color", "color_name", "hex", "R", "G", "B"]
-data_path = r'colors.csv'
+data_path = r"colors.csv"
 ref_data = pd.read_csv(data_path, names = columns)
 print(ref_data.shape)
 
