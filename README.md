@@ -1,4 +1,4 @@
-## Python Project on Color Detection using OpenCv
+## Python Project on Color Detection using OpenCV
 
 Color detection is the process of detecting the name of any color.
 In this project, we are building an application using Python's OpenCV library, through which you can automatically get the name of the color by clicking on them. 
